@@ -12,12 +12,13 @@ extension LevelStringExt on String {
         "perito": Level.perito
       }[this]!;
 }
+
 extension LevelExt on Level {
   String get parse => {
-Level.facil: "facil",
-Level.medio: "medio",
-Level.dificil: "dificil",
-Level.perito: "perito"
+        Level.facil: "facil",
+        Level.medio: "medio",
+        Level.dificil: "dificil",
+        Level.perito: "perito"
       }[this]!;
 }
 
@@ -49,8 +50,8 @@ class QuizModel {
   factory QuizModel.fromMap(Map<String, dynamic> map) {
     return QuizModel(
       title: map['title'],
-      questions: List<QuestionModel>.from(map['questions']
-              ?.map((x) => QuestionModel.fromMap(x))),
+      questions: List<QuestionModel>.from(
+          map['questions']?.map((x) => QuestionModel.fromMap(x))),
       answeredQuestions: map['answeredQuestions'],
       image: map['image'],
       level: map['level'].toString().parse,

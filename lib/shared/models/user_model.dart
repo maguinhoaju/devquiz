@@ -21,9 +21,9 @@ class UserModel {
 
   factory UserModel.fromMap(Map<String, dynamic> map) {
     return UserModel(
-      name: map['name'] ?? '',
-      photoUrl: map['photoUrl'] ?? '',
-      score: map['score'] ?? 0,
+      name: map['name'],
+      photoUrl: map['photoUrl'],
+      score: map['score'],
     );
   }
 
