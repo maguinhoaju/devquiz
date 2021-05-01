@@ -2,12 +2,12 @@ import 'package:DevQuiz/shared/models/answer_model.dart';
 
 class QuestionModel {
   final String title;
-  final List<AnswerModel> answer;
+  final List<AnswerModel> answers;
 
   QuestionModel({
     required this.title,
-    required this.answer,
+    required this.answers,
   }) : assert(
-          answer.length == 4,
+          answers.length == 4,
         ); //a lista de answers deve ter 4 itens obrigatoriamente
 }
