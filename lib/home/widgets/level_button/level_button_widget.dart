@@ -43,9 +43,9 @@ class LevelButtonWidget extends StatelessWidget {
       decoration: BoxDecoration(
           color: color,
           border: Border.fromBorderSide(BorderSide(color: borderColor)),
-          borderRadius: BorderRadius.circular(28)),
+          borderRadius: BorderRadius.circular(25)),
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 6),
+        padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 6),
         child: Text(
           label,
           style: GoogleFonts.notoSans(color: fontColor, fontSize: 13),
